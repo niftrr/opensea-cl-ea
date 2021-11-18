@@ -1,3 +1,5 @@
+repository_owner: NFTlend
+repository_name: opensea-cl-ea
 name: OpenseaFloor
 description: External Adapter for Opensea collection floor prices
 node_identifier: cl-opensea-floor
