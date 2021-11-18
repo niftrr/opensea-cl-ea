@@ -1,0 +1,12 @@
+name: OpenseaFloor
+description: External Adapter for Opensea collection floor prices
+node_identifier: cl-opensea-floor
+platforms:
+  - Docker
+  - AWS Lambda
+  - GCP Functions
+data_sources:
+  - name: OpenseaFloor
+    url: https://api.opensea.io/api/v1/
+parameters:
+  - collection_slug

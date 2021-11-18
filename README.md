@@ -1,10 +1,10 @@
-# Opensea Chainlink External Adapter in NodeJS.
+# Opensea Floor Chainlink External Adapter.
 
-To retrieve Opensea floor price per given NFT collection.
+A Chainlink External Adapter to retrieve the Opensea floor price of an NFT collection.
 
 ## Input Params
 
-- `q`: the Opensea API `collection_slug` parameter to query
+- `collection_slug`: the Opensea NFT collection to query (https://docs.opensea.io/reference/collection-model)
 
 ## Output
 
@@ -69,7 +69,7 @@ yarn start
 ## Call the external adapter/API server
 
 ```bash
-curl -X POST -H "content-type:application/json" "http://localhost:8080/" --data '{ "id": 0, "data": {"q":"doodles-official"} }'
+curl -X POST -H "content-type:application/json" "http://localhost:8080/" --data '{ "id": 0, "data": {"collection_slug":"doodles-official"} }'
 ```
 
 ## Docker

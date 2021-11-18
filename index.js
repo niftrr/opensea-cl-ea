@@ -12,7 +12,7 @@ const customError = (data) => {
 // with a Boolean value indicating whether or not they
 // should be required.
 const customParams = {
-  collection_slug: ['q', 'collection_slug'],
+  collection_slug: ['collection_slug', 'Opensea collection_slug'],
 }
 
 const createRequest = (input, callback) => {
@@ -20,8 +20,8 @@ const createRequest = (input, callback) => {
   // The Validator helps you validate the Chainlink request data
   const validator = new Validator(callback, input, customParams)
   const jobRunID = validator.validated.id
-  const q = validator.validated.data.collection_slug;
-  const url = `https://api.opensea.io/api/v1/collection/${q}/stats`;
+  const collection_slug = validator.validated.data.collection_slug;
+  const url = `https://api.opensea.io/api/v1/collection/${collection_slug}/stats`;
   const appid = process.env.API_KEY; // Create/add to .env file
 
   const params = {
