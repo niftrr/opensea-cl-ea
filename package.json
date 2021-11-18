@@ -1,8 +1,8 @@
 {
-  "name": "EA-NodeJS-Template",
+  "name": "opensea-cl-ea",
   "version": "0.1.0",
-  "author": "",
-  "description": "",
+  "author": "niftrr",
+  "description": "Chainlink External Adapter for Opensea floor prices",
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/_mocha --timeout 0",
